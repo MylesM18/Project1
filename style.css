@@ -1,0 +1,46 @@
+
+
+.home-logo {
+    height: inherit;
+    position: inherit;
+    padding-right: 1em;
+    font-family: Lato, sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.333;
+    color: #f0134d;
+    margin-left: 10px;
+
+}
+
+.img{
+    padding: 5px;
+    
+}
+
+.menu-drop{
+    position:absolute; left:80%; top:18%
+}
+
+#header{
+    text-align: center;
+    font-size: 60px;
+    color: #00838f;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    padding: 13px;
+}
+
+.submitButton{
+    margin-left: 10px;
+}
+
+.input-button{
+    position: relative;
+    bottom: 50px;
+    left: 880px;
+    padding: 5px 10px;
+    background-color: #EE6E73;
+    border-radius: 5px;
+    color: white;
+  }
