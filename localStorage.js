@@ -29,6 +29,7 @@ $( ".submitButton" ).click(function() {
       if(password.length >= 8){
         if(password === confirmPass){
             $("#account").text("Account Created!")
+            reRoute()
     }}}else if(password.length < 8){
         $('#account').text('Password must be atleast 8 characters')
     }else if(password !== confirmPass){
@@ -79,5 +80,9 @@ function handleReroute(){
   
 }
 
-//https://tutorshelpingstudents.slack.com/
-
+$(document).ready(function(){
+    $(".dropdown-trigger").dropdown();
+    });
+function reRoute(){
+    window.location.replace('./home.html')
+}

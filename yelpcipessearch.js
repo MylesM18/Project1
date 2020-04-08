@@ -1,7 +1,7 @@
 var apiKey = "AjKdTH6lQ1WvueYOrfQ-d0u3QDV6DBsyRt02B2FgK-JITh5FQzq2qoxSbyb3Dwc9bFuOTEgjh1Rz2hqgWyElIiKYrSxc3XsCRqUxleWVD-RVe2AJ92yWZB5N2UBwXnYx";
 
 //This will search up any restaurants that match the following criteria
-$(".input-button").click(function(event){
+$("#button").click(function(event){
     event.preventDefault();
     $("#results").empty()
     var foodCategory = $("#category").val();
@@ -14,14 +14,6 @@ $(".input-button").click(function(event){
         }
     }).then(function(response) {
     console.log(response)
-
-//Pressing enter will also trigger the above event
-$("#location").keyup(function(){
-    if (e.which == 13){
-        $(".input-button").click(event);
-    }
-})
-   
 
     //This will dynamically generate the results
     var businessesLength = (response.businesses.length);
@@ -79,4 +71,19 @@ $(document).on("click", ".heart.fa", function() {
 
 
 
+$(document).ready(function(){
+    $(".dropdown-trigger").dropdown();
+    });
 
+    //Pressing enter will also trigger the above event
+$("#location").keyup(function(e){
+    if (e.which == 13){
+        $("#button").click();
+    }
+})
+
+$("#category").keyup(function(e){
+    if (e.which == 13){
+        $("#button").click();
+    }
+})

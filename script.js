@@ -174,6 +174,9 @@ $(document).on("click", ".heart.fa", function(event) {
 //         button.textContent = whiteHeart;
 //     }
 // }
+$(document).ready(function(){
+    $(".dropdown-trigger").dropdown();
+    });
 
 
   
